@@ -49,8 +49,8 @@ public class First extends HttpServlet {
 		//Getting and displaying values of context and servlet int parameters to console.
 		//ServletContext context = this.getServletContext();
 		//System.out.println(context.getInitParameter("bestJavaInstitute"));
-		ServletConfig config=this.getServletConfig();
-		System.out.println(config.getInitParameter("url"));
+		ServletConfig config=this.getServletConfig(); 
+		System.out.println(config.getInitParameter("url"));//This is servlet init parameter which is defined in web.xml file.
 		request.setAttribute("requestAttribute", "RequestAttribute");// setting attribute to request scope
 		ServletContext sc = getServletContext();
 		sc.setAttribute("contextAttribute", "ContextAttribute"); // setting attribute to context scope
